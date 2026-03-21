@@ -5,7 +5,7 @@ The files are :
 
 - Cyber security topology and architecture.
 
-- My SIEM Rules Names (582 custom rules. 436 Alert directly to my phone).
+- My SIEM Rules Names (582 custom rules. 436 Alerts directly to my phone).
 
 - Security and CIS Benchamrk registry tweaks. (168 registry settings).
 
