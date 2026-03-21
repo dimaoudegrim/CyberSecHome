@@ -7,9 +7,9 @@ The files are :
 
 - My SIEM Rules Names (582 custom rules. 436 Alert directly to my phone).
 
-- Security and CIS Benchamrk registry tweaks. (173 registry settings).
+- Security and CIS Benchamrk registry tweaks. (168 registry settings).
 
-- Privacy, Performance, remove telemetry and other Registry tweaks. (185 registry settings).
+- Privacy, Performance, remove telemetry and other Registry tweaks. (82 registry settings).
 
 - Firefox custom settings (150 custom settings, mainly in about:config).
 
