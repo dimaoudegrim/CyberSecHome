@@ -1,0 +1,27 @@
+<!-- Modify it at your will. -->
+<!--<decoder name="yara">
+  <prematch>wazuh-yara: </prematch>
+</decoder>
+
+<decoder name="yara">
+  <parent>yara</parent>
+  <regex>wazuh-yara: (\S+) - Scan result: (\S+) (\.*)$</regex>
+  <order>log_type, yara_rule, yara_scanned_file</order>
+</decoder>
+
+<decoder name="yara">
+  <parent>yara</parent>
+  <regex>wazuh-yara: (\S+) - Yara active response error. (\.+)</regex>
+  <order>log_type, error_message</order>
+</decoder>
+-->
+
+<decoder name="yara_decoder">
+    <prematch>wazuh-yara:</prematch>
+</decoder>
+
+<decoder name="yara_decoder1">
+    <parent>yara_decoder</parent>
+    <regex>wazuh-yara: (\S+) - Scan result: (\S+) (\S+)</regex>
+    <order>log_type, yara_rule, yara_scanned_file</order>
+</decoder>

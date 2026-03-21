@@ -1,0 +1,123 @@
+<!-- Modify it at your will. -->
+<decoder name="checkpoint-harmony-mobile">
+  <prematch>roitmanpho60e2e.eu2.locsec.net</prematch>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>Product:(\.*),</regex>
+  <order>Product</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>AttackVector:(\.*),</regex>
+  <order>AttackVector</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>DeviceAlert Event:(\.*),</regex>
+  <order>DeviceAlert Event</order>
+</decoder>
+
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>app_hash\\:(\.*),</regex>
+  <order>app_hash</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>AttackVector:(\.*),</regex>
+  <order>AttackVector</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>RiskLevel:(\.*),</regex>
+  <order>RiskLevel</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>DeviceOwner:(\.*),</regex>
+  <order>DeviceOwner</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>RiskLevel:(\.*),</regex>
+  <order>RiskLevel</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>Threat Factors:(\.*),</regex>
+  <order>Threat Factors</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>APP package:(\.*),</regex>
+  <order>APP package</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>Network Resource: (\.*)</regex>
+  <order>Network Resource</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>EventType: (\.*),</regex>
+  <order>EventType</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>confidence'\\: '(\.*)'</regex>
+  <order>confidence</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>risk'\\: (\.*)\\,</regex>
+  <order>risk</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>file_size'\\: (\.*)\\,</regex>
+  <order>file_size</order>
+</decoder><decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>file_type'\\: '(\.*)'</regex>
+  <order>file_type</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>DeviceEmail: (\.*)'</regex>
+  <order>DeviceEmail</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>DeviceNumber:: (\.*)'</regex>
+  <order>DeviceNumber:</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>first_seen'\\: '(\.*)'</regex>
+  <order>first_seen</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>DeviceOSLevel: (\.*)'</regex>
+  <order>DeviceOSLevel</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>file_hash\\: (\.*),</regex>
+  <order>file_hash</order>
+</decoder>
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>DeviceOwner:(\.*),</regex>
+  <order>DeviceOwner</order>
+</decoder>
+
+<decoder name="checkpoint-harmony-mobile">
+  <parent>checkpoint-harmony-mobile</parent>
+  <regex>Event: (\.*),</regex>
+  <order>Event</order>
+</decoder>
+
+
+

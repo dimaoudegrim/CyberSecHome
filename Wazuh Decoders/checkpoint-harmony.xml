@@ -1,0 +1,661 @@
+<decoder name="checkpoint-harmony">
+  <prematch>^\d* \d+-\d+-\d+T\d+:\d+:\w+ \.* \w+ \d+</prematch>
+</decoder>
+<!--harmony realted fields-->
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>scope:"(\.*)"</regex>
+  <order>ip_related_to_attack</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>detected_on:"(\.*)"</regex>
+  <order>detected_on</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>dropped_file_name:"(\.*)"</regex>
+  <order>dropped_file_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>dropped_file_type:"(\.*)"</regex>
+  <order>dropped_file_type</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>dropped_file_hash:"(\.*)"</regex>
+  <order>dropped_file_hash</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>dropped_file_verdict:"(\.*)"</regex>
+  <order>dropped_file_verdict</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>extracted_file_type:"(\.*)"</regex>
+  <order>extracted_file_type</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>extracted_file_names:"(\.*)"</regex>
+  <order>extracted_file_names</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>extracted_file_hash:"(\.*)"</regex>
+  <order>extracted_file_hash</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>extracted_file_verdict:"(\.*)"</regex>
+  <order>extracted_file_verdict</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>parent_file_hash:"(\.*)"</regex>
+  <order>parent_file_hash</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>parent_file_name:"(\.*)"</regex>
+  <order>parent_file_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>similiar_iocs:"(\.*)"</regex>
+  <order>similiar_iocs</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>similar_hashes:"(\.*)"</regex>
+  <order>similar_hashes</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>similar_communication:"(\.*)"</regex>
+  <order>similar_communication</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>similar_communication:"(\.*)"</regex>
+  <order>similar_communication</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>te_verdict_determined_by:"(\.*)"</regex>
+  <order>te_verdict_determined_by</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>total_attachments:"(\.*)"</regex>
+  <order>total_attachments</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>content_risk:"(\.*)"</regex>
+  <order>content_risk</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>operation:"(\.*)"</regex>
+  <order>operation</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>scrubbed_content:"(\.*)"</regex>
+  <order>scrubbed_content</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>scrub_activity:"(\.*)"</regex>
+  <order>scrub_activity</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>subject:"(\.*)"</regex>
+  <order>mail_subject</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>subject:"(\.*)"</regex>
+  <order>mail_subject</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>client_name:"(\.*)"</regex>
+  <order>detected-by</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>host_time:"(\.*)"</regex>
+  <order>host_time</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>process_md5:"(\.*)"</regex>
+  <order>process_md5</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>process_name:"(\.*)"</regex>
+  <order>process_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>reason:"(\.*)"</regex>
+  <order>reason</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>resource:"(\.*)"</regex>
+  <order>resource</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>first_detection:"(\.*)"</regex>
+  <order>first_detection</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>last_detection:"(\.*)"</regex>
+  <order>last_detection</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>parent_process_md5:"(\.*)"</regex>
+  <order>parent_process_md5</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>parent_process_name:"(\.*)"</regex>
+  <order>parent_process_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>parent_process_username:"(\.*)"</regex>
+  <order>parent_process_username</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>process_username:"(\.*)"</regex>
+  <order>process_username</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>destination_dns_hostname:"(\.*)"</regex>
+  <order>destination_dns_hostname</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>smartdefense_profile:"(\.*)"</regex>
+  <order>smartdefense_profile</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>smartdefense_profile:"(\.*)"</regex>
+  <order>smartdefense_profile</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>email_session_id:"(\.*)"</regex>
+  <order>email_session_id</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>email_recipients_num:"(\.*)"</regex>
+  <order>email_recipients_num</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>blade_name:"(\.*)"</regex>
+  <order>blade_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>short_desc:"(\.*)"</regex>
+  <order>short_desc</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>long_desc:"(\.*)"</regex>
+  <order>long_desc</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>unique_detected_hour:"(\.*)"</regex>
+  <order>unique_detected_hour</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>unique_detected_day:"(\.*)"</regex>
+  <order>unique_detected_day</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>unique_detected_week:"(\.*)"</regex>
+  <order>uunique_detected_week</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>description:"(\.*)"</regex>
+  <order>description</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>attack_status:"(\.*)"</regex>
+  <order>attack_status</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>triggered_by:"(\.*)"</regex>
+  <order>triggered_by</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>trusted_domain:"(\.*)"</regex>
+  <order>impersonated_domain</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>app_package:"(\.*)"</regex>
+  <order>app_package</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>appi_name:"(\.*)"</regex>
+  <order>appi_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>app_repackaged:"(\.*)"</regex>
+  <order>app_repackaged</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>app_sid_id:"(\.*)"</regex>
+  <order>app_sid_id</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>developer_certificate_name:"(\.*)"</regex>
+  <order>developer_certificate_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>app_version:"(\.*)"</regex>
+  <order>app_version</order>
+</decoder>
+
+
+<!-- common fields -->
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>confidence_level:"(\.*)"</regex>
+  <order>confidence_level</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>calc_desc:"(\.*)"</regex>
+  <order>log_desc</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>dst:"(\.*)"</regex>
+  <order>dst</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>dst_country:"(\.*)"</regex>
+  <order>dst_country</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>dst_ip:"(\.*)"</regex>
+  <order>dst_ip</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>dst_user_name:"(\.*)"</regex>
+  <order>dst_user_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>email_subject:"(\.*)"</regex>
+  <order>email_subject</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>file_type:"(\.*)"</regex>
+  <order>file_type</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>file_name:"(\.*)"</regex>
+  <order>file_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>file_size:"(\.*)"</regex>
+  <order>file_size</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>file_md5:"(\.*)"</regex>
+  <order>file_md5</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>file_sha1:"(\.*)"</regex>
+  <order>file_sha1</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>file_sha1:"(\.*)"</regex>
+  <order>file_sha256</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>from:"(\.*)"</regex>
+  <order>from</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>to:"(\.*)"</regex>
+  <order>to</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>information:"(\.*)"</regex>
+  <order>information</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>layer_name:"(\.*)"</regex>
+  <order>layer_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>malware_action:"(\.*)"</regex>
+  <order>malware_action</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>malware_family:"(\.*)"</regex>
+  <order>malware_family</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>app_category:"(\.*)"</regex>
+  <order>app_category</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>policy:"(\.*)"</regex>
+  <order>policy</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>product_family:"(\.*)"</regex>
+  <order>product_family</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>protection_name:"(\.*)"</regex>
+  <order>protection_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>protection_type:"(\.*)"</regex>
+  <order>protection_type</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>proto:"(\.*)"</regex>
+  <order>proto</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>protocol:"(\.*)"</regex>
+  <order>protocol</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>proxy_src_ip:"(\.*)"</regex>
+  <order>proxy_src_ip</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>proxy_src_ip:"(\.*)"</regex>
+  <order>proxy_src_ip</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>sent_bytes:"(\.*)"</regex>
+  <order>sent_bytes</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>service_id:"(\.*)"</regex>
+  <order>service_id</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>severity:"(\.*)"</regex>
+  <order>severity</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>severity:"(\.*)"</regex>
+  <order>severity</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>src:"(\.*)"</regex>
+  <order>src</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>src_ip:"(\.*)"</regex>
+  <order>src_ip</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>src_country:"(\.*)"</regex>
+  <order>src_country</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>src_user_name:"(\.*)"</regex>
+  <order>src_user_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>verdict:"(\.*)"</regex>
+  <order>verdict</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>user:"(\.*)"</regex>
+  <order>user</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>web_client_type:"(\.*)"</regex>
+  <order>web_client_type</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>web_client_type:"(\.*)"</regex>
+  <order>web_client_type</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>host_type:"(\.*)"</regex>
+  <order>host_type</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>os_name:"(\.*)"</regex>
+  <order>os_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>user_name:"(\.*)"</regex>
+  <order>user_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>policy_name="(\.*)"</regex>
+  <order>policy_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>user_sid:"(\.*)"</regex>
+  <order>user_sid</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>destination_path:"(\.*)"</regex>
+  <order>destination_path</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>media_description:"(\.*)"</regex>
+  <order>media_description</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>process:"(\.*)"</regex>
+  <order>process</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>reading_data_access:"(\.*)"</regex>
+  <order>reading_data_access</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>writing_data_access:"(\.*)"</regex>
+  <order>writing_data_access</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>src_machine_name:"(\.*)"</regex>
+  <order>src_machine_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>administrator:"(\.*)"</regex>
+  <order>administrator</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>file_size:"(\.*)"</regex>
+  <order>file_size</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>items_detected:"(\.*)"</regex>
+  <order>items_detected</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>event_type:"(\.*)"</regex>
+  <order>event_type</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>action:"(\.*)"</regex>
+  <order>action</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>log_sys_message:"(\.*):</regex>
+  <order>log_sys_message</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>rule_name:"(\.*)"</regex>
+  <order>rule_name</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>action_details:"(\.*)"</regex>
+  <order>action_details</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>host_type:"(\.*)"</regex>
+  <order>host_type</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>infection_category:"(\.*)"</regex>
+  <order>infection_category</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>Signer:"(\.*)"</regex>
+  <order>Signer</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>user_sid:"(\.*)"</regex>
+  <order>user_sid</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>matched_category:"(\.*)"</regex>
+  <order>matched_category</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>remediated_files:(\.*);</regex>
+  <order>remediated_files</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>client_ip:"(\.*)";</regex>
+  <order>client_ip</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>product:"(\.*)";</regex>
+  <order>product</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>Authentication method:"(\.*)";</regex>
+  <order>Authentication method</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>suspicious_events:"(\.*)";</regex>
+  <order>suspicious_events</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>impacted_files:"(\.*)";</regex>
+  <order>impacted_files</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>system_application:"(\.*)"</regex>
+  <order>system_application</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>Event: (\.*),</regex>
+  <order>Event</order>
+</decoder>
+<decoder name="checkpoint-harmony">
+  <parent>checkpoint-harmony</parent>
+  <regex>operation:"(\.*)";</regex>
+  <order>operation</order>
+</decoder>
+
+
+
+operation:
