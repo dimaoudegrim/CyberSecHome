@@ -1,0 +1,23 @@
+<decoder name="opswat">
+  <prematch>\w\w\w \d+ \d+\D\d+\D\d+ OPSWAT </prematch>
+</decoder>
+<decoder name="opswat">
+  <parent>opswat</parent>
+  <regex>Logged On - (\.*) logged on</regex>
+  <order>user</order>
+</decoder>
+<decoder name="opswat">
+  <parent>opswat</parent>
+  <regex>Logged Off - (\.*) logged off</regex>
+  <order>user</order>
+</decoder>
+<decoder name="opswat">
+  <parent>opswat</parent>
+  <regex>updated the policy (\.*)  -</regex>
+  <order>policy</order>
+</decoder>
+<decoder name="opswat">
+  <parent>opswat</parent>
+  <regex>Issue Settings \((\.*)\)</regex>
+  <order>policy_change</order>
+</decoder>

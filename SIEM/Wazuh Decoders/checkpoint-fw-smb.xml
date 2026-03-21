@@ -1,0 +1,1504 @@
+
+<decoder name="checkpoint-fw">
+<type>syslog</type>
+  <prematch>community="RemoteAccess"|malware_detected_last_day=|ProductName="|[WebUI] invalid password for|GW-CC|GW-CC pam_auth: pam_hidden_unix(https:auth): authentication failure;|[WebUI]|GW-CC pam_auth: PAM|GW-CC pam_auth: pam_hidden_unix|GW-CC login: [WebUI]|GW-CC lua:</prematch>
+</decoder>
+
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>ifdir="(\.*)"</regex>
+  <order>network_dst</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>ifname="(\.*)"</regex>
+  <order>outbound_port</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>CN="(\.*)"</regex>
+  <order>firewall_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>attack="(\.*)"</regex>
+  <order>suspected_attack</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>attack_info="(\.*)"</regex>
+  <order>suspected_attack_info</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>confidence_level="(\.*)"</regex>
+  <order>confidence_level</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>received_bytes="(\.*)"</regex>
+  <order>received_bytes</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>_directories_number="(\.*)"</regex>
+  <order>_directories_number</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>Action="(\.*)"</regex>
+  <order>fw_action</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>action_reason="(\.*)"</regex>
+  <order>action_reason</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>additional_info="(\.*)"</regex>
+  <order>additional_info</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>additional_rdata="(\.*)"</regex>
+  <order>additional_rdata</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>attack_info="(\.*)"</regex>
+  <order>attack_info</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>aggregation_info="(\.*)"</regex>
+  <order>aggregation_info</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>alert="(\.*)"</regex>
+  <order>alert</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>allocated_ports="(\.*)"</regex>
+  <order>allocated_ports</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>analyzed_on="(\.*)"</regex>
+  <order>analyzed_on</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>answer_rdata="(\.*)"</regex>
+  <order>answer_rdata</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>anti_virus_type="(\.*)"</regex>
+  <order>anti_virus_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>app_desc="(\.*)"</regex>
+  <order>app_desc</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>app_id="(\.*)"</regex>
+  <order>app_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>app_properties="(\.*)"</regex>
+  <order>app_properties</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>app_risk="(\.*)"</regex>
+  <order>app_risk</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>app_rule_id="(\.*)"</regex>
+  <order>app_rule_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>app_rule_name="(\.*)"</regex>
+  <order>app_rule_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>app_sig_id="(\.*)"</regex>
+  <order>app_sig_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>appi_name="(\.*)"</regex>
+  <order>appi_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>arrival_time="(\.*)"</regex>
+  <order>arrival_time</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>attachments_num="(\.*)"</regex>
+  <order>attachments_num</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>auth_method="(\.*)"</regex>
+  <order>auth_method</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>authority_rdata="(\.*)"</regex>
+  <order>authority_rdata</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>authorization="(\.*)"</regex>
+  <order>authorization</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>bcc="(\.*)"</regex>
+  <order>bcc</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>broker_publisher="(\.*)"</regex>
+  <order>broker_publisher</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>browse_time="(\.*)"</regex>
+  <order>browse_time</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>bytes="(\.*)"</regex>
+  <order>bytes</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>c_bytes="(\.*)"</regex>
+  <order>c_bytes</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>calc_desc="(\.*)"</regex>
+  <order>calc_desc</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>capacity="(\.*)"</regex>
+  <order>capacity</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>capture_uuid="(\.*)"</regex>
+  <order>capture_uuid</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>categories="(\.*)"</regex>
+  <order>categories</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>cc="(\.*)"</regex>
+  <order>cc</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>certificate_resource="(\.*)"</regex>
+  <order>certificate_resource</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>resource="(\.*)"</regex>
+  <order>resource</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>certificate_validation="(\.*)"</regex>
+  <order>certificate_validation</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>cgnet="(\.*)"</regex>
+  <order>cgnet</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>chunk_type="(\.*)"</regex>
+  <order>chunk_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>client_inbound_bytes="(\.*)"</regex>
+  <order>client_inbound_bytes</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>client_inbound_interface="(\.*)"</regex>
+  <order>client_inbound_interface</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>client_inbound_packets="(\.*)"</regex>
+  <order>client_inbound_packets</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>client_outbound_bytes="(\.*)"</regex>
+  <order>client_outbound_bytes</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>client_outbound_interface="(\.*)"</regex>
+  <order>client_outbound_interface</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>client_outbound_packets="(\.*)"</regex>
+  <order>client_outbound_packets</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>client_type="(\.*)"</regex>
+  <order>client_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>client_type_os="(\.*)"</regex>
+  <order>client_type_os</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>cluster_info="(\.*)"</regex>
+  <order>cluster_info</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>community="(\.*)"</regex>
+  <order>community</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>confidence_level="(\.*)"</regex>
+  <order>confidence_level</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>connection_uid="(\.*)"</regex>
+  <order>connection_uid</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>connectivity_level="(\.*)"</regex>
+  <order>connectivity_level</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>conns_amount="(\.*)"</regex>
+  <order>conns_amount</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>content_disposition="(\.*)"</regex>
+  <order>content_disposition</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>content_length="(\.*)"</regex>
+  <order>content_length</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>content_risk="(\.*)"</regex>
+  <order>content_risk</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>content_type="(\.*)"</regex>
+  <order>content_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>context_num="(\.*)"</regex>
+  <order>context_num</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>cookieI="(\.*)"</regex>
+  <order>cookieI</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>cookieR="(\.*)"</regex>
+  <order>cookieR</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>cp_message="(\.*)"</regex>
+  <order>cp_message</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>cvpn_category="(\.*)"</regex>
+  <order>cvpn_category</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>cvpn_resource="(\.*)"</regex>
+  <order>cvpn_resource</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>data_type_name="(\.*)"</regex>
+  <order>data_type_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dce-rpc_interface_uuid ="(\.*)"</regex>
+  <order>dce-rpc_interface_uuid </order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>delivery_time="(\.*)"</regex>
+  <order>delivery_time</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>desc="(\.*)"</regex>
+  <order>desc</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>description="(\.*)"</regex>
+  <order>description</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>destination_object="(\.*)"</regex>
+  <order>destination_object</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>detected_on="(\.*)"</regex>
+  <order>detected_on</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>diameter_app_ID="(\.*)"</regex>
+  <order>diameter_app_ID</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>diameter_app_name="(\.*)"</regex>
+  <order>diameter_app_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>diameter_cmd_code="(\.*)"</regex>
+  <order>diameter_cmd_code</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>diameter_msg_type="(\.*)"</regex>
+  <order>diameter_msg_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_action_reason="(\.*)"</regex>
+  <order>dlp_action_reason</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>reason="(\.*)"</regex>
+  <order>reason</order>
+</decoder>
+
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_addtional_action="(\.*)"</regex>
+  <order>dlp_addtional_action</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_categories="(\.*)"</regex>
+  <order>dlp_categories</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_data_type_name="(\.*)"</regex>
+  <order>dlp_data_type_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_data_type_uid="(\.*)"</regex>
+  <order>dlp_data_type_uid</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_file_name="(\.*)"</regex>
+  <order>dlp_file_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_fingerprint_long_status="(\.*)"</regex>
+  <order>dlp_fingerprint_long_status</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_fingerprint_short_status="(\.*)"</regex>
+  <order>dlp_fingerprint_short_status</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_fingerprinted_files_number="(\.*)"</regex>
+  <order>dlp_fingerprinted_files_number</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_incident_uid="(\.*)"</regex>
+  <order>dlp_incident_uid</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_recipients="(\.*)"</regex>
+  <order>dlp_recipients</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_related_incident_uid="(\.*)"</regex>
+  <order>dlp_related_incident_uid</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_relevant_data_types="(\.*)"</regex>
+  <order>dlp_relevant_data_types</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_repository_directories_number="(\.*)"</regex>
+  <order>dlp_repository_directories_number</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_repository_files_number="(\.*)"</regex>
+  <order>dlp_repository_files_number</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_repository_id="(\.*)"</regex>
+  <order>dlp_repository_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_repository_not_="(\.*)"</regex>
+  <order>dlp_repository_not_</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_repository_reached_directories_number="(\.*)"</regex>
+  <order>dlp_repository_reached_directories_number</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_repository_root_path="(\.*)"</regex>
+  <order>dlp_repository_root_path</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_repository_scan_progress="(\.*)"</regex>
+  <order>dlp_repository_scan_progress</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_repository_scanned_directories_number="(\.*)"</regex>
+  <order>dlp_repository_scanned_directories_number</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_repository_scanned_files_number="(\.*)"</regex>
+  <order>dlp_repository_scanned_files_number</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_repository_scanned_total_size="(\.*)"</regex>
+  <order>dlp_repository_scanned_total_size</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_repository_skipped_files_number="(\.*)"</regex>
+  <order>dlp_repository_skipped_files_number</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_repository_total_size="(\.*)"</regex>
+  <order>dlp_repository_total_size</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_repository_unreachable="(\.*)"</regex>
+  <order>dlp_repository_unreachable</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_rule_name="(\.*)"</regex>
+  <order>dlp_rule_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_rule_uid="(\.*)"</regex>
+  <order>dlp_rule_uid</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_subject="(\.*)"</regex>
+  <order>dlp_subject</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_template_score="(\.*)"</regex>
+  <order>dlp_template_score</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_transint="(\.*)"</regex>
+  <order>dlp_transint</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_violation_description ="(\.*)"</regex>
+  <order>dlp_violation_description </order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_watermark_profile="(\.*)"</regex>
+  <order>dlp_watermark_profile</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dlp_word_list="(\.*)"</regex>
+  <order>dlp_word_list</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dns_message_type="(\.*)"</regex>
+  <order>dns_message_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dns_query="(\.*)"</regex>
+  <order>dns_query</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dns_type="(\.*)"</regex>
+  <order>dns_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>domain_name="(\.*)"</regex>
+  <order>domain_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>drop_reason="(\.*)"</regex>
+  <order>drop_reason</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dropped_file_hash="(\.*)"</regex>
+  <order>dropped_file_hash</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dropped_file_name="(\.*)"</regex>
+  <order>dropped_file_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dropped_file_type="(\.*)"</regex>
+  <order>dropped_file_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dropped_file_verdict="(\.*)"</regex>
+  <order>dropped_file_verdict</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dropped_incoming="(\.*)"</regex>
+  <order>dropped_incoming</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dropped_outgoing="(\.*)"</regex>
+  <order>dropped_outgoing</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dropped_total="(\.*)"</regex>
+  <order>dropped_total</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>drops_amount ="(\.*)"</regex>
+  <order>drops_amount </order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dst="(\.*)"</regex>
+  <order>dst</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dst_domain_name="(\.*)"</regex>
+  <order>dst_domain_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dst_country="(\.*)"</regex>
+  <order>dst_country</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dst_ip="(\.*)"</regex>
+  <order>dst_ip</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dst_machine_name="(\.*)"</regex>
+  <order>dst_machine_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dst_phone_number ="(\.*)"</regex>
+  <order>dst_phone_number </order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dst_user_name="(\.*)"</regex>
+  <order>dst_user_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dstkeyid="(\.*)"</regex>
+  <order>dstkeyid</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>duplicate="(\.*)"</regex>
+  <order>duplicate</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>duration="(\.*)"</regex>
+  <order>duration</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>elapsed="(\.*)"</regex>
+  <order>elapsed</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>email_content="(\.*)"</regex>
+  <order>email_content</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>email_control="(\.*)"</regex>
+  <order>email_control</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>email_control_analysis="(\.*)"</regex>
+  <order>email_control_analysis</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>email_headers="(\.*)"</regex>
+  <order>email_headers</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>email_id="(\.*)"</regex>
+  <order>email_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>email_message_id="(\.*)"</regex>
+  <order>email_message_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>email_queue_id="(\.*)"</regex>
+  <order>email_queue_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>email_queue_name="(\.*)"</regex>
+  <order>email_queue_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>email_recipients_num="(\.*)"</regex>
+  <order>email_recipients_num</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>email_session_id="(\.*)"</regex>
+  <order>email_session_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>email_spam_category="(\.*)"</regex>
+  <order>email_spam_category</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>email_status="(\.*)"</regex>
+  <order>email_status</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>email_subject="(\.*)"</regex>
+  <order>email_subject</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>emulated_on="(\.*)"</regex>
+  <order>emulated_on</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>encryption_failure="(\.*)"</regex>
+  <order>encryption_failure</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>end_time="(\.*)"</regex>
+  <order>end_time</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>end_user_firewall_type="(\.*)"</regex>
+  <order>end_user_firewall_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>esod_access_status="(\.*)"</regex>
+  <order>esod_access_status</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>esod_associated_policies="(\.*)"</regex>
+  <order>esod_associated_policies</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>esod_noncompliance_reason="(\.*)"</regex>
+  <order>esod_noncompliance_reason</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>esod_rule_action="(\.*)"</regex>
+  <order>esod_rule_action</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>esod_rule_name="(\.*)"</regex>
+  <order>esod_rule_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>esod_rule_type="(\.*)"</regex>
+  <order>esod_rule_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>esod_scan_status="(\.*)"</regex>
+  <order>esod_scan_status</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>event_count="(\.*)"</regex>
+  <order>event_count</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>expire_time="(\.*)"</regex>
+  <order>expire_time</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>extracted_file_hash="(\.*)"</regex>
+  <order>extracted_file_hash</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>extracted_file_names="(\.*)"</regex>
+  <order>extracted_file_names</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>extracted_file_type="(\.*)"</regex>
+  <order>extracted_file_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>extracted_file_uid="(\.*)"</regex>
+  <order>extracted_file_uid</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>extracted_file_verdict="(\.*)"</regex>
+  <order>extracted_file_verdict</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>failure_impact="(\.*)"</regex>
+  <order>failure_impact</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>failure_reason="(\.*)"</regex>
+  <order>failure_reason</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>file_direction="(\.*)"</regex>
+  <order>file_direction</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>file_id="(\.*)"</regex>
+  <order>file_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>file_md5="(\.*)"</regex>
+  <order>file_md5</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>file_name="(\.*)"</regex>
+  <order>file_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>file_sha1="(\.*)"</regex>
+  <order>file_sha1</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>file_sha256="(\.*)"</regex>
+  <order>file_sha256</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>file_size="(\.*)"</regex>
+  <order>file_size</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>file_type="(\.*)"</regex>
+  <order>file_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>files_names="(\.*)"</regex>
+  <order>files_names</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>first_hit_time="(\.*)"</regex>
+  <order>first_hit_time</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>from="(\.*)"</regex>
+  <order>from</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>fs-proto="(\.*)"</regex>
+  <order>fs-proto</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>ftp_user="(\.*)"</regex>
+  <order>ftp_user</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>fw_message="(\.*)"</regex>
+  <order>fw_message</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>fw_subproduct="(\.*)"</regex>
+  <order>fw_subproduct</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>hide_ip="(\.*)"</regex>
+  <order>hide_ip</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>hit="(\.*)"</regex>
+  <order>hit</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>http_host="(\.*)"</regex>
+  <order>http_host</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>http_location="(\.*)"</regex>
+  <order>http_location</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>http_server="(\.*)"</regex>
+  <order>http_server</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>https_inspection_action="(\.*)"</regex>
+  <order>https_inspection_action</order>
+</decoder>
+
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>https_inspection_rule_id="(\.*)"</regex>
+  <order>https_inspection_rule_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>https_inspection_rule_name="(\.*)"</regex>
+  <order>https_inspection_rule_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>https_validation="(\.*)"</regex>
+  <order>https_validation</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>icap_more_info="(\.*)"</regex>
+  <order>icap_more_info</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>icap_server_name="(\.*)"</regex>
+  <order>icap_server_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>icap_server_service="(\.*)"</regex>
+  <order>icap_server_service</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>icap_service_id="(\.*)"</regex>
+  <order>icap_service_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>src="(\.*)"</regex>
+  <order>src_ip</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>icmp="(\.*)"</regex>
+  <order>icmp</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>icmp_code="(\.*)"</regex>
+  <order>icmp_code</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>icmp_type="(\.*)"</regex>
+  <order>icmp_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>id="(\.*)"</regex>
+  <order>id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>ike="(\.*)"</regex>
+  <order>ike</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>ike_ids="(\.*)"</regex>
+  <order>ike_ids</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>incident_extension="(\.*)"</regex>
+  <order>incident_extension</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>indicator_description="(\.*)"</regex>
+  <order>indicator_description</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>indicator_name="(\.*)"</regex>
+  <order>indicator_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>indicator_reference="(\.*)"</regex>
+  <order>indicator_reference</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>indicator_uuid="(\.*)"</regex>
+  <order>indicator_uuid</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>industry_reference="(\.*)"</regex>
+  <order>industry_reference</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>info="(\.*)"</regex>
+  <order>info</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>information="(\.*)"</regex>
+  <order>information</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>inspection_category="(\.*)"</regex>
+  <order>inspection_category</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>inspection_information="(\.*)"</regex>
+  <order>inspection_information</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>inspection_item="(\.*)"</regex>
+  <order>inspection_item</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>inspection_profile="(\.*)"</regex>
+  <order>inspection_profile</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>inspection_settings_log="(\.*)"</regex>
+  <order>inspection_settings_log</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>int_end="(\.*)"</regex>
+  <order>int_end</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>int_start="(\.*)"</regex>
+  <order>int_start</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>interface_name="(\.*)"</regex>
+  <order>interface_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>interfacedir="(\.*)"</regex>
+  <order>interfacedir</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>internal_error="(\.*)"</regex>
+  <order>internal_error</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>invalid_file_size="(\.*)"</regex>
+  <order>invalid_file_size</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>inzone="(\.*)"</regex>
+  <order>inzone</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>ip_option="(\.*)"</regex>
+  <order>ip_option</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>isp_link="(\.*)"</regex>
+  <order>isp_link</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>last_hit_time="(\.*)"</regex>
+  <order>last_hit_time</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>last_rematch_time="(\.*)"</regex>
+  <order>last_rematch_time</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>layer_name="(\.*)"</regex>
+  <order>layer_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>layer_uuid="(\.*)"</regex>
+  <order>layer_uuid</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>limit_applied="(\.*)"</regex>
+  <order>limit_applied</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>limit_requested="(\.*)"</regex>
+  <order>limit_requested</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>link_probing_status_update="(\.*)"</regex>
+  <order>link_probing_status_update</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>links_num="(\.*)"</regex>
+  <order>links_num</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>log_delay ="(\.*)"</regex>
+  <order>log_delay </order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>log_id="(\.*)"</regex>
+  <order>log_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>loguid="(\.*)"</regex>
+  <order>loguid</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>machine="(\.*)"</regex>
+  <order>machine</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>malware_action="(\.*)"</regex>
+  <order>malware_action</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>malware_family="(\.*)"</regex>
+  <order>malware_family</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>malware_rule_id="(\.*)"</regex>
+  <order>malware_rule_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>malware_rule_name="(\.*)"</regex>
+  <order>malware_rule_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>match_fk="(\.*)"</regex>
+  <order>match_fk</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>match_id="(\.*)"</regex>
+  <order>match_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>matched_category="(\.*)"</regex>
+  <order>matched_category</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>matched_file="(\.*)"</regex>
+  <order>matched_file</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>matched_file_percentage="(\.*)"</regex>
+  <order>matched_file_percentage</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>matched_file_text_segments="(\.*)"</regex>
+  <order>matched_file_text_segments</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>media_type="(\.*)"</regex>
+  <order>media_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>message="(\.*)"</regex>
+  <order>message</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>message_info="(\.*)"</regex>
+  <order>message_info</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>message_size="(\.*)"</regex>
+  <order>message_size</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>method="(\.*)"</regex>
+  <order>method</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>methods="(\.*)"</regex>
+  <order>methods</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>mime_from="(\.*)"</regex>
+  <order>mime_from</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>mime_to="(\.*)"</regex>
+  <order>mime_to</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>mirror_and_decrypt_type="(\.*)"</regex>
+  <order>mirror_and_decrypt_type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>src_user_name="(\.*)"</regex>
+  <order>src_user_name</order>
+</decoder>
+
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>user="(\.*)"</regex>
+  <order>user</order>
+</decoder>
+
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>product_family="(\.*)"</regex>
+  <order>product_family</order>
+</decoder>
+
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>vendor_list="(\.*)"</regex>
+  <order>vendor_list</order>
+</decoder>
+
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>protection_type="(\.*)"</regex>
+  <order>protection_type</order>
+</decoder>
+
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>service="(\.*)"</regex>
+  <order>service_port</order>
+</decoder>
+
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>severity="(\.*)"</regex>
+  <order>severity</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>start_time="(\.*)"</regex>
+  <order>start_time</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>https_inspection_action="(\.*)"</regex>
+  <order>https_inspection_action</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>service_id="(\.*)"</regex>
+  <order>service_id</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>src="(\.*)"</regex>
+  <order>src</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dst="(\.*)"</regex>
+  <order>dst</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>community="(\.*)"</regex>
+  <order>community</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>vpn_user="(\.*)"</regex>
+  <order>vpn_user</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>svc="(\.*)"</regex>
+  <order>service.port</order>
+</decoder>
+
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>Protection Name="(\.*)"</regex>
+  <order>Protection.Name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>dst_country="(\.*)"</regex>
+  <order>dst_country</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>Confidence Level="(\.*)"</regex>
+  <order>Confidence.Level</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>severity="(\.*)"</regex>
+  <order>severity</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>rule_name="(\.*)"</regex>
+  <order>rule_name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>mitre_defense_evasion="(\.*)"</regex>
+  <order>mitre_defense_evasion</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>mitre_credential_access="(\.*)"</regex>
+  <order>mitre_credential_access</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>mitre_command_and_control="(\.*)"</regex>
+  <order>mitre_command_and_control</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>mitre_impact="(\.*)"</regex>
+  <order>mitre_impact</order>
+  </decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>Protection Name="(\.*)"</regex>
+  <order>Protection.Name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>attack="(\.*)"</regex>
+  <order>attack</order>
+</decoder>
+
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>Attack Info="(\.*)"</regex>
+  <order>Attack.Info</order>
+</decoder>
+
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>Industry Reference="(\.*)"</regex>
+  <order>Industry.Reference</order>
+</decoder>
+
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>Protection Type="(\.*)"</regex>
+  <order>Protection.Type</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>" name="(\.*)"</regex>
+  <order>name</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>src_device_model="(\.*)"</regex>
+  <order>src_device_model</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>" risk="(\.*)"</regex>
+  <order>risk</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>src_device_function="(\.*)"</regex>
+  <order>src_device_function</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>classification.Activity:(\.*).</regex>
+  <order>classification.Activity</order>
+</decoder>
+<decoder name="checkpoint-fw">
+  <parent>checkpoint-fw</parent>
+  <regex>not permitted.Category:(\.*).</regex>
+  <order>not.permitted.Category</order>
+</decoder>
+
