@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\ExtensionInstallBlocklist]
+"1"="*"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\ExtensionInstallAllowlist]
+"1"="efaidnbmnnnibpcajpcglclefindmkaj" 
+"2"="lmjegmlicamnimmfhcmpkclmigmmcbeh" 
+"3"="ghbmnnjooekpmoecnnnilnnbdlolhkhi" 
+"4"="deakbjemijlmlcehdgejmdpekkceodmk" 
+"5"="bmnlcjabgnpnenekpadlanbbkooimhnj" 
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\ExtensionInstallSources]
+"1"="https://clients2.google.com/*"
+"2"="https://chrome.google.com/*"
+"3"="https://chromewebstore.google.com/*"
+"4"="https://*.checkpoint.com/*"
