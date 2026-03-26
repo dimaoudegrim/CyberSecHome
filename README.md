@@ -19,6 +19,7 @@ The files are :
 
 - Scripts:
   * Microsoft defender Hardening.
+  * other.
 - Web browsers:
   * Set dns settings gloabally on all interfaces.
   * Set dns over https settings per each browser.
