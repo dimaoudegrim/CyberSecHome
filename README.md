@@ -9,7 +9,7 @@ The files are :
 
 - Security and CIS Benchamrk registry tweaks. (168 registry settings).
 
-- Privacy, Performance, remove telemetry and other Registry tweaks. (82 registry settings).
+- Privacy, Performance, remove telemetry and other Registry tweaks. (85 registry settings).
 
 - Firefox custom settings (150 custom settings, mainly in about:config).
 
@@ -17,7 +17,9 @@ The files are :
 
 - wazuh Dashboards. MY main one.
 
-- Powershell scripts.
+- scripts:
   * Microsoft defender Hardening.
+- Web browsers:
   * Set dns settings gloabally on all interfaces.
   * set dns over https settings per each browser.
+  * allowlist of addons: Firefox(ps1), Edge(reg), Chrome(reg), Brave(reg)
