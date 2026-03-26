@@ -17,9 +17,9 @@ The files are :
 
 - wazuh Dashboards. MY main one.
 
-- scripts:
+- Scripts:
   * Microsoft defender Hardening.
 - Web browsers:
   * Set dns settings gloabally on all interfaces.
-  * set dns over https settings per each browser.
-  * allowlist of addons: Firefox(ps1), Edge(reg), Chrome(reg), Brave(reg)
+  * Set dns over https settings per each browser.
+  * Allowlist of addons: Firefox(ps1), Edge(reg), Chrome(reg), Brave(reg)
