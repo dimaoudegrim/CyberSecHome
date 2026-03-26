@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\0patch\CallbackKeys\UnloadLoaderDll]
+"Counter"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\0patch]
+"ExcludeModules"="lsass.exe|ai.exe|aimgr.exe"
