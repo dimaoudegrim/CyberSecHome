@@ -5,6 +5,34 @@
 .DESCRIPTION
     Removes bloatware AppX packages, disables optional features/capabilities,
     and applies registry tweaks to kill Copilot, Cortana, and Steps Recorder.
+	This is the list:
+Clipchamp
+Bing News
+Bing Weather
+Xbox Gaming App
+Get Help
+Get Started / Tips
+Solitaire Collection
+People
+Power Automate Desktop
+Alarms & Clock
+Mail & Calendar
+Feedback Hub
+Maps
+Xbox overlays (3x)
+Phone Link
+Groove Music
+Movies & TV
+Family Safety
+Quick Assist
+Microsoft Teams (both versions)
+Cortana
+Copilot (app + sidebar)
+Outlook for Windows
+Internet Explorer
+Language Handwriting/OCR/Speech/TTS
+Tablet PC Math
+Steps Recorder
 .NOTES
     Run as Administrator. A restart is required after execution.
 #>
