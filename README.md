@@ -19,6 +19,7 @@ The files are :
 
 - Scripts:
   * Microsoft defender Hardening.
+  * Debloat windows.
   * other.
 - Web browsers:
   * Set dns settings gloabally on all interfaces.
