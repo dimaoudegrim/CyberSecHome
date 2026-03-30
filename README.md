@@ -21,6 +21,8 @@ The files are :
   * Microsoft defender Hardening.
   * Debloat windows.
   * Download IOC list for CDB on WAZUH.
+  * Web browsers settings.
+  * DNS settings
   * other.
 - Web browsers:
   * Set dns settings gloabally on all interfaces.
