@@ -13,7 +13,7 @@ The files are :
 
 - Firefox custom settings (150 custom settings, mainly in about:config).
 
-- Wazuh Decoders - My own. 11 files.
+- Wazuh Decoders - Mostly My own. 11 files.
 
 - wazuh Dashboards. MY main one.
 
