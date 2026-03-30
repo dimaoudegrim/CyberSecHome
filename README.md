@@ -20,6 +20,7 @@ The files are :
 - Scripts:
   * Microsoft defender Hardening.
   * Debloat windows.
+  * Download IOC list for CDB on WAZUH.
   * other.
 - Web browsers:
   * Set dns settings gloabally on all interfaces.
