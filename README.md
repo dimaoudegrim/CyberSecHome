@@ -18,7 +18,6 @@ The files are :
 - wazuh Dashboards. MY main one.
 
 - Scripts:
-  * Microsoft defender Hardening.
   * Debloat windows.
   * Download IOC list for CDB on WAZUH.
   * Web browsers settings.
