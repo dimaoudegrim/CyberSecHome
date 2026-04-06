@@ -22,11 +22,11 @@ The files are :
   * Debloat windows.
   * Download IOC list for CDB on WAZUH.
   * Web browsers settings.
+  * Set dns settings gloabally on all interfaces.
   * DNS settings
   * other.
 - Web browsers:
   * Firefox custom settings (150 custom settings, mainly in about:config).
-  * Set dns settings gloabally on all interfaces.
-  * Set dns over https settings per each browser.
+  * Set dns over https settings per each browser (Firefox, Brave, Chrome, Edge)
   * Allowlist of addons: Firefox(ps1), Edge(reg), Chrome(reg), Brave(reg)
 
