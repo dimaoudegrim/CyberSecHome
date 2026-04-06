@@ -148,7 +148,7 @@ Windows Registry Editor Version 5.00
 "DisallowShaking"=dword:00000000
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"ExtendedUIHoverTime"=dword:200
+"ExtendedUIHoverTime"=dword:00000064
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
 "Max Cached Icons"="4096"
