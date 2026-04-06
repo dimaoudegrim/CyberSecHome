@@ -1,18 +1,16 @@
 $ipv4Path = "HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces"
-$ipv6Path = "HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters\Interfaces" # Added IPv6 support
+$ipv6Path = "HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters\Interfaces" 
 $successCount = 0
 $failCount    = 0
 
 Write-Host "`nDisabling Nagle's Algorithm on active network interfaces...`n" -ForegroundColor Cyan
 
-# Accurately find active network adapters
 $activeAdapters = Get-NetAdapter | Where-Object { $_.Status -eq 'Up' }
 
 foreach ($adapter in $activeAdapters) {
     $guid    = $adapter.InterfaceGuid
     $adapterFailed = $false
 
-    # Apply to both IPv4 and IPv6 stacks for complete effectiveness
     foreach ($basePath in @($ipv4Path, $ipv6Path)) {
         $regPath = "$basePath\$guid"
         
@@ -21,11 +19,10 @@ foreach ($adapter in $activeAdapters) {
                 New-Item -Path $regPath -Force -ErrorAction Stop | Out-Null
             } catch {
                 $adapterFailed = $true
-                continue # Skip setting properties if the base path cannot be created
+                continue 
             }
         }
 
-        # Set-ItemProperty smoothly creates the value if missing, or updates it if present.
         try { Set-ItemProperty -Path $regPath -Name "TcpAckFrequency" -Value 1 -Type DWord -ErrorAction Stop } catch { $adapterFailed = $true }
         try { Set-ItemProperty -Path $regPath -Name "TCPNoDelay"      -Value 1 -Type DWord -ErrorAction Stop } catch { $adapterFailed = $true }
         try { Set-ItemProperty -Path $regPath -Name "TcpDelAckTicks"  -Value 0 -Type DWord -ErrorAction Stop } catch { $adapterFailed = $true }
