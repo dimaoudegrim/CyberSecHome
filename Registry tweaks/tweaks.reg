@@ -195,9 +195,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
 "Tcp1323Opts"=dword:00000002
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters]
-"DisabledComponents"=dword:000000ff
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NdisImPlatform]
 "AllowIdlePowerdown"=dword:00000000
 
