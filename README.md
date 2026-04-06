@@ -28,3 +28,5 @@ The files are :
   * Set dns settings gloabally on all interfaces.
   * Set dns over https settings per each browser.
   * Allowlist of addons: Firefox(ps1), Edge(reg), Chrome(reg), Brave(reg)
+  * Firefox custom settings (150 custom settings, mainly in about:config).
+
