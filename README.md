@@ -20,9 +20,7 @@ The files are :
 - Scripts:
   * Debloat windows.
   * Download IOC list for CDB on WAZUH.
-  * Web browsers settings.
   * Set dns settings gloabally on all interfaces.
-  * DNS settings
   * other.
 - Web browsers:
   * Firefox custom settings (150 custom settings, mainly in about:config).
