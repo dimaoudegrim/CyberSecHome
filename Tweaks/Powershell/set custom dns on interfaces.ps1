@@ -1,0 +1,1 @@
+Get-NetAdapter | Set-DnsClientServerAddress -ServerAddresses ("149.112.112.112", "9.9.9.9")
