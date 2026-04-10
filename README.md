@@ -15,8 +15,6 @@ The files are :
 
 - Wazuh Decoders - Mostly My own. 11 files.
 
-- wazuh Dashboards. MY main one.
-
 - Scripts:
   * Debloat windows.
   * Download IOC list for CDB on WAZUH.
