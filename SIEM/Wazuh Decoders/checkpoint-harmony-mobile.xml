@@ -1,6 +1,6 @@
 <!-- Modify it at your will. -->
 <decoder name="checkpoint-harmony-mobile">
-  <prematch>roitmanpho60e2e.eu2.locsec.net</prematch>
+  <prematch>xxxxxxx.locsec.net</prematch>
 </decoder>
 <decoder name="checkpoint-harmony-mobile">
   <parent>checkpoint-harmony-mobile</parent>
