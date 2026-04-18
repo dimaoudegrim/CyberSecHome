@@ -16,7 +16,7 @@ The files are :
 - Wazuh Decoders - Mostly My own. 11 files.
 
 - Scripts:
-  * Debloat windows.
+  * Debloat windows (27 components or apps).
   * Download IOC list for CDB on WAZUH.
   * Set dns settings gloabally on all interfaces.
   * other.
