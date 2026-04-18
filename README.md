@@ -9,7 +9,7 @@ The files are :
 
 - Security and CIS Benchamrk registry tweaks. (168 registry settings).
 
-- Privacy, Performance, remove telemetry and other Registry tweaks. (112 registry settings).
+- Privacy, Performance, remove telemetry and other Registry tweaks. (135 registry settings).
 
 - Firefox custom settings (150 custom settings, mainly in about:config).
 
