@@ -11,7 +11,7 @@ The files are :
 
 - Privacy, Performance, remove telemetry and other Registry tweaks. (137 registry settings).
 
-- Firefox custom settings (150 custom settings, mainly in about:config).
+- Firefox custom settings (155 custom settings, mainly in about:config).
 
 - Wazuh Decoders - Mostly My own. 11 files.
 
