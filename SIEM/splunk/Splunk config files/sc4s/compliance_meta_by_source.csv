@@ -1,0 +1,2 @@
+f_linux,.splunk.index,"linux_sc4s"
+f_linux,.splunk.sourcetype,"syslog"
