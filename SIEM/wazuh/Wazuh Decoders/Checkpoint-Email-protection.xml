@@ -1,0 +1,144 @@
+<!-- Modify it at your will. -->
+<decoder name="Checkpoint-Email-protection">
+  <prematch>\d+\D\d+\D\d+\w\d+\D\d+\D\d+\D\d+ checkpointcloudsec.com Checkpoint</prematch>
+</decoder>
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>event_type: (\.*);</regex>
+  <order>event_type</order>
+</decoder>
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>maliciouscontent: (\.*);</regex>
+  <order>maliciouscontent</order>
+</decoder>
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>time: (\.*);</regex>
+  <order>time</order>
+</decoder>
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>to: (\.*);</regex>
+  <order>to</order>
+</decoder>
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>email_subject: (\.*);</regex>
+  <order>email_subject</order>
+</decoder>
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>verdict: (\.*);</regex>
+  <order>verdict</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>to: (\.*);</regex>
+  <order>to</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>resource: (\.*);</regex>
+  <order>resource</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>product: (\.*);</regex>
+  <order>product</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>scope: (\.*);</regex>
+  <order>scope</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>action: (\.*);</regex>
+  <order>action</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>from_email: (\.*);</regex>
+  <order>from_email</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>user: (\.*);</regex>
+  <order>user</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex> in an email from (\.*) -</regex>
+  <order>an_email_from</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>severity: (\.*);</regex>
+  <order>severity</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>from_nickname: (\.*);</regex>
+  <order>from_nickname</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>confidence_level: (\.*);</regex>
+  <order>confidence_level</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>reply_to: (\.*);</regex>
+  <order>reply_to</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>sender_domain: (\.*);</regex>
+  <order>sender_domain</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>status: (\.*);</regex>
+  <order>status</order>
+</decoder>
+
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>SPF: (\.*);</regex>
+  <order>SPF</order>
+</decoder>
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>events: logged in from (\.*) \(</regex>
+  <order>first_country</order>
+</decoder>
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>minutes logged in from (\.*) \(</regex>
+  <order>second_country</order>
+</decoder>
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>seconds logged in from (\.*) \(</regex>
+  <order>second_country</order>
+</decoder>
+<decoder name="Checkpoint-Email-protection">
+  <parent>Checkpoint-Email-protection</parent>
+  <regex>hours logged in from (\.*) \(</regex>
+  <order>second_country</order>
+</decoder>
