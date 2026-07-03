@@ -9,9 +9,13 @@ Windows Registry Editor Version 5.00
 "3"="ghbmnnjooekpmoecnnnilnnbdlolhkhi" 
 "4"="deakbjemijlmlcehdgejmdpekkceodmk" 
 "5"="bmnlcjabgnpnenekpadlanbbkooimhnj" 
+"6"="ddkjiahejlhfcafbddmgiahcphecmpfh"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\ExtensionInstallSources]
 "1"="https://clients2.google.com/*"
 "2"="https://chrome.google.com/*"
 "3"="https://chromewebstore.google.com/*"
 "4"="https://*.checkpoint.com/*"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\ExtensionInstallForcelist]
+"2"="ddkjiahejlhfcafbddmgiahcphecmpfh;https://clients2.google.com/service/update2/crx"
