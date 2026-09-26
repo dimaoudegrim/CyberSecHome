@@ -1,7 +1,7 @@
 # CyberSecHome
 Some Family cyber security project for fun as a hobby 😉.
 Tools used:
-Checkpoint Firewall SMB
+- Checkpoint Firewall SMB
 - 2x Sophos Firewalls (1 over Proxmox as VM on mini pc and additional 1 original appliance)
 - Checkpoint harmony Endpoint EDR
 - Checkpoint harmony browse
