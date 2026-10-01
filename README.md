@@ -56,4 +56,4 @@ The files here are :
   * Set dns over https settings per each browser (Firefox, Brave, Chrome, Edge)
   * Allowlist of addons: Firefox(ps1), Edge(reg), Chrome(reg), Brave(reg)
   * 
-- Local AI Pipeline with private and secure connection between Desktop to remote phones and laptop.
+- Local AI Pipeline with private and secure connection between Desktop to remote phones and laptop. Integration with firefox build-in chatboot on desktop.
