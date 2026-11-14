@@ -1,5 +1,19 @@
 # CyberSecHome
 Some Family cyber security project for fun as a hobby 😉.
+Network:
+<img width="2918" height="1600" alt="Network" src="https://github.com/user-attachments/assets/051ae8c9-e311-49a3-9080-5ea325d068d2" />
+Endpoints:
+<img width="2906" height="1602" alt="endpoint" src="https://github.com/user-attachments/assets/f3fe11db-69c6-4410-99c2-18221376f7e5" />
+SIEM:
+<img width="2878" height="1588" alt="siem" src="https://github.com/user-attachments/assets/317f275b-2921-4503-931a-9819f0e97014" />
+Website:
+<img width="2656" height="1460" alt="website" src="https://github.com/user-attachments/assets/c339cfa1-0734-4fb9-b405-f1550232e99a" />
+Splunk Home LAB - mainly testing for clients:
+<img width="2662" height="1488" alt="splunk" src="https://github.com/user-attachments/assets/f7046967-b869-4ee7-870a-4ae29c48020b" />
+Local AI Pipeline:
+<img width="1300" height="719" alt="Local AI Pipeline " src="https://github.com/user-attachments/assets/49eecb17-394e-4629-9dcf-7bac9fd8b5c9" />
+
+
 Tools used:
 - Checkpoint Firewall SMB
 - 2x Sophos Firewalls (1 over Proxmox as VM on mini pc and additional 1 original appliance)
