@@ -18,7 +18,7 @@ Splunk Home LAB - mainly testing for clients:
 ----------------
 Local AI Pipeline:
 <img width="1300" height="719" alt="Local AI Pipeline " src="https://github.com/user-attachments/assets/49eecb17-394e-4629-9dcf-7bac9fd8b5c9" />
-
+------------------
 
 Tools used:
 - Checkpoint Firewall SMB
